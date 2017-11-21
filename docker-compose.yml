@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  ubuntu-java8:
+    image: lparet/docker-ubuntu-java8
+    container_name: ubuntu-java8
+    restart: always

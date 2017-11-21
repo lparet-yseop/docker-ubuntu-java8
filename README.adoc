@@ -29,7 +29,7 @@ It will download the latest version.
 .docker-compose.yml
 ----
 services:
-  docker-ubuntu-java8:
+  ubuntu-java8:
     image: lparet/docker-ubuntu-java8
     container_name: ubuntu-java8
     restart: always
@@ -55,7 +55,7 @@ You can use *docker run* command:
 
 [source,bash]
 ----
-docker run -it --name ubuntu-java8
+docker run -it --name ubuntu-java8 lparet/docker-ubuntu-java8
 ----
 
 == Author
