@@ -1,0 +1,63 @@
+= Docker container with Java8
+
+This repository contains configurations to create a Docker container with:
+
+* *Ubuntu* 16.04
+* *Java8*
+
+== Getting Started
+
+=== Prerequisites
+
+You have to install *Docker* and *Docker Compose* (optional) to build and run this container.
+
+=== Pull container
+
+You can download this container from *DockerHub* by launching this command :
+
+[source,bash]
+----
+docker pull lparet/docker-ubuntu-java8
+----
+
+It will download the latest version.
+
+=== Run container
+
+==== Prerequisites
+
+.docker-compose.yml
+----
+services:
+  docker-ubuntu-java8:
+    image: lparet/docker-ubuntu-java8
+    container_name: ubuntu-java8
+    restart: always
+----
+
+After, you can change:
+- The container name.
+
+==== Running
+
+You can use *docker-compose.yml*:
+
+[source,bash]
+----
+docker-compose up -d
+----
+
+It will run your container with parameters specified in the file.
+
+OR
+
+You can use *docker run* command:
+
+[source,bash]
+----
+docker run -it --name ubuntu-java8
+----
+
+== Author
+
+Louis Paret - perso@louisparet.fr

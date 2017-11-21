@@ -5,7 +5,6 @@ LABEL Louis Paret <perso@louisparet.fr>
 RUN apt-get update \
   && apt-get -y install \
     software-properties-common \
-    python-pip \
   && add-apt-repository -y ppa:webupd8team/java \
   && apt-get update \
   && echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | debconf-set-selections \
